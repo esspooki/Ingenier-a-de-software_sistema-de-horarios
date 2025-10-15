@@ -3,7 +3,7 @@ import json
 # cargar los datos desde el json
 with open('ofertaEjemplo.json', 'r', encoding='utf-8') as f:
     classes = json.load(f)
-
+#busqueda de ejemplo, al usar ".lower()"" se ignora mayusculas y minusculas
 def buscar_materia(materia):
     return [c for c in classes if c['Materia'].lower() == materia.lower()]
 
